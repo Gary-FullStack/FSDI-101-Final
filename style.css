@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  color: #3a3a3a;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.card {
+  box-shadow: 25px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 50px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+p {
+  font-size: 0.95em;
+  margin-bottom: 1.8em;
+}
+h2,
+h3,
+a {
+  color: #093a58;
+}
+h2,
+h3 {
+  margin-top: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+.name {
+  font-size: 1.35em;
+  margin: 0;
+}
+.main-nav {
+  margin-top: 5px;
+}
+.name a,
+.main-nav a {
+  text-align: center;
+  display: block;
+  padding: 10px 15px;
+}
+.main-nav a {
+  font-size: 0.95em;
+  color: #3acec2;
+  text-transform: uppercase;
+}
+.main-nav a:hover {
+  color: red;
+}
+
+.main-header {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.banner,
+.main-footer {
+  text-align: center;
+}
+.banner {
+  color: #fff;
+  background: lightgrey;
+  padding: 3.2em 0;
+  margin-bottom: 48px;
+}
+.col {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.main-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(224, 135, 135);
+  color: white;
+  text-align: center;
+}
+
+.logo {
+  width: 500px;
+}
+.headline {
+  margin-bottom: 0;
+}
+.feat-img {
+  border-radius: 5px;
+}
+
+@media (min-width: 769px) {
+  .main-header,
+  .row {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .tagline {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 1025px) {
+  .main-header,
+  .row {
+    width: 80%;
+    max-width: 1150px;
+  }
+}
+@media (min-width: 769px) {
+  .main-header,
+  .main-nav,
+  .row {
+    display: flex;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .col {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .primary {
+    flex: 2;
+  }
+
+  @media (min-width: 1025px) {
+    .row2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}
